@@ -1,6 +1,8 @@
 # test_screen
 
-A new Flutter project.
+Flutter sample screen design with custom navigation bar. 
+
+![alt text](https://github.com/Mr-Bhardwa7/flutter_test_screen/blob/master/screenshot/test_screen.png?raw=true)
 
 ## Getting Started
 
