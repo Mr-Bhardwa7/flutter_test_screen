@@ -1,4 +1,4 @@
-# test_screen
+# flutter_test_screen
 
 Flutter sample screen design with custom navigation bar. 
 
