@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Dashboard',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -95,7 +95,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
             TopRow(month: _focusMonth),
             SizedBox(height: 10.0),
             _buildTableCalendar(),
-            SizedBox(height: 10.0),
+            // SizedBox(height: 10.0),
             Expanded(
               child: Container(
                 padding: EdgeInsets.zero,
@@ -113,7 +113,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       SizedBox(
-                        height: 15.0,
+                        height: 8.0,
                       ),
                       Container(
                         alignment: Alignment.centerLeft,
@@ -123,7 +123,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        height: 12.0,
+                        height: 5.0,
                       ),
                       Container(
                         height: 150,
@@ -138,7 +138,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                             })),
                       ),
                       SizedBox(
-                        height: 15.0,
+                        height: 7.0,
                       ),
                       Container(
                         padding: EdgeInsets.only(left: 8.0, right: 8.0),
@@ -187,7 +187,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.only(
-                              left: 32.0, right: 32.0, top: 16.0),
+                              left: 32.0, right: 32.0, top: 16.0, bottom: 4.0),
                           margin: EdgeInsets.only(top: 8.0),
                           decoration: BoxDecoration(
                               color: Colors.white,
@@ -318,10 +318,10 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 100,
+        height: 80,
         color: Colors.white,
         child: Container(
-          height: 100,
+          height: 70,
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(25.0)),
@@ -375,7 +375,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
   Widget buildNavBarItem(
       BuildContext context, IconData icon, int index, bool isCenter) {
     return Container(
-      padding: EdgeInsets.only(bottom: 16.0),
+      padding: EdgeInsets.only(bottom: 8.0),
       child: GestureDetector(
         child: Container(
             padding: EdgeInsets.only(right: 10.0, left: 10.0),
